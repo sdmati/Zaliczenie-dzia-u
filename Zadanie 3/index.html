@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var x = Number(prompt("Podaj poczatek przedzialu"))
+        var y = Number(prompt("Podaj koniec przedzialu"))
+        var k = Number(prompt("Podaj dzielnik"))
+        
+        if(y>x){
+            for(; x<=y; x++){
+            if(x%k==0){
+                document.write(x + "</br>")
+            }
+            }
+        }
+        else{
+            document.write("Blad")
+        }
+
+    </script>
+
+</body>
+</html>

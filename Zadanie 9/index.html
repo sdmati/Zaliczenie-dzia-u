@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var a = Number(prompt("Podaj liczbe a"))
+        var b = Number(prompt("Podaj liczbe b"))
+        var c = Number(prompt("Podaj liczbe c"))
+
+        var delta = b*b-(4*a*c)
+        
+        if(delta==0){
+            var x0 = -b/(2*a)
+            
+            document.write("Delta jest rowna " + delta + "</br>")
+            document.write("Wynik rownania to " + x0 )
+        }
+        if(delta>0){
+            var pierwiastek = Math.sqrt(delta)
+    
+            var x1 = (-b-pierwiastek)/(2*a)
+            var x2 = (-b+pierwiastek)/(2*a)
+
+            document.write(delta + "</br>")
+            document.write(x1 + "</br>")
+            document.write(x2 + "</br>")
+        }
+        if(delta<0){
+            document.write("Brak rozwiazan")
+        }
+        
+    </script>
+
+</body>
+</html>
